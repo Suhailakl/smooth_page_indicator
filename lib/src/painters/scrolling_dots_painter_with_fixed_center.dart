@@ -61,14 +61,14 @@ class ScrollingDotsWithFixedCenterPainter extends IndicatorPainter {
       canvas.drawRRect(rRect, dotPaint..color = color);
     }
 
-    final rRect =
-        _calcBounds(size.height, size.width / 2, 0, effect.activeDotScale);
-    canvas.drawRRect(
-        rRect,
-        Paint()
-          ..color = effect.activeDotColor
-          ..strokeWidth = effect.activeStrokeWidth
-          ..style = PaintingStyle.stroke);
+//    final rRect =
+//        _calcBounds(size.height, size.width / 2, 0, effect.activeDotScale);
+//    canvas.drawRRect(
+//        rRect,
+//        Paint()
+//          ..color = effect.activeDotColor
+//          ..strokeWidth = effect.activeStrokeWidth
+//          ..style = PaintingStyle.stroke);
   }
 
   RRect _calcBounds(double canvasHeight, double startingPoint, num i,
